@@ -100,6 +100,42 @@ its corresponding cartesian coordinates, which is then returned by the function.
 
 ## Data Flow of the IoT-LiDAR System
 
+<div align="center">
+  <img src="Images/DataFlow.png" alt="Data Flow Diagram of IoT-LiDAR Detection System" style="width:50%; height:auto;">
+</div>
+
+## Fall Detection Notification System
+
+The most important feature of the patient monitoring web application is its ability to provide
+real-time notifications to healthcare professionals. This is achieved using the dynamic rendering
+of components using ReactJS. When the Raspberry Pi edge device has detected a fall, the current
+activity card in the web application turns bright red and starts blinking, which can be seen in
+the screenshot below. This would bring immediate attention to any healthcare professional using the web
+application, and will trigger an immediate response to provide emergency care to their elderly
+patient.
+
+<div align="center">
+  <img src="Images/PatientMonitoring.png" alt="Patient Activity Monitoring Web App UI Notification when a Fall is Detected." style="width:50%; height:auto;">
+  <p><em>Patient Activity Monitoring Web App UI Notification when a Fall is Detected</em></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
