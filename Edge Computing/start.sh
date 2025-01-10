@@ -34,4 +34,4 @@ fi
 # run pub/sub sample app using certificates downloaded in package
 printf "\nRunning pub/sub sample application...\n"
 # python3 aws-iot-device-sdk-python-v2/samples/pubsub.py --endpoint a1t3k72oolg1ie-ats.iot.us-east-1.amazonaws.com --ca_file root-CA.crt --cert lidar_edge_device.cert.pem --key lidar_edge_device.private.key --client_id basicPubSub --topic sdk/test/python --count 0
-python3 aws-iot-device-sdk-python-v2/samples/mqtt_test.py --endpoint a1t3k72oolg1ie-ats.iot.us-east-1.amazonaws.com --ca_file root-CA.crt --cert lidar_edge_device.cert.pem --key lidar_edge_device.private.key --client_id edgeDevice --topic sdk/test/python --count 0
+python3 aws-iot-device-sdk-python-v2/samples/mqtt_test.py --endpoint --ca_file root-CA.crt --cert lidar_edge_device.cert.pem --key lidar_edge_device.private.key --client_id edgeDevice --topic sdk/test/python --count 0

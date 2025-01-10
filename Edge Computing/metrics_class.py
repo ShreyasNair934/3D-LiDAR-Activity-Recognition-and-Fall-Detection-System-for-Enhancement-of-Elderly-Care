@@ -21,7 +21,7 @@ class LatencyMeasurement:
             start_time = time.time()
             result = func(*args, **kwargs)
             end_time = time.time()
-            latency = (end_time - start_time) * 1000  # Convert to milliseconds
+            latency = (end_time - start_time) * 1000  
             self.latencies['processing'].append(latency)
             return result
         return wrapper
@@ -30,7 +30,7 @@ class LatencyMeasurement:
         start_time = time.time()
         response = requests.get(url)
         end_time = time.time()
-        latency = (end_time - start_time) * 1000  # Convert to milliseconds
+        latency = (end_time - start_time) * 1000  
         self.latencies['network'].append(latency)
         return latency
 
