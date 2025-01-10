@@ -119,6 +119,33 @@ patient.
   <p><em>Patient Activity Monitoring Web App UI Notification when a Fall is Detected</em></p>
 </div>
 
+## Real-Time Perfromance of the IoT-LiDAR System
+
+To deploy an IoT-LiDAR detection system into the real-world, one of the most crucial
+factors enabling its success would be the systems real-time performance. In our proof-ofconcept
+design, we have tested the real-time capabilities of the Raspberry Pi 4, in processing
+the point cloud data along with testing the end-to-end latency of the whole system. During
+testing, we have determined that the average time taken for the Raspberry pi to apply all the
+data pre-processing steps to one point cloud data file is 125ms. This result is very promising,
+as shows the capability of the Raspberry Pi 4, to be an effective edge device for an IoT-LiDAR
+system. This result shows that the Raspberry Pi 4, can be delegated the task of specifically
+only performing data preprocessing of the point cloud data. Special devices such as Google
+Coral USB accelerator specifically designed for deep learning model inference, could then be
+integrated with the Raspberry Pi and used to deploy pre-trained deep learning models. It is
+also important to note that the Raspberry Pi 4, is an older model. With the recent release of
+the Raspberry Pi 5, which is claimed to be 3 to 4 times faster than the Raspberry Pi 4, we can
+expect the real-time performance of our IoT-LiDAR system to improve significantly. The endto-
+end system latency has also been tested. This is the time taken for the IoT-LiDAR system to
+complete the data pre-processing of the point cloud data, simulate deep learning inference, send
+patient activity data to AWS services, and then be displayed by the patient activity monitoring
+web application. In our testing, we have found that the end-to-end latency to be 1.6 seconds
+on average. This result shows that, when the system detects that a fall event has occurred
+(simulated), it takes less that 2 seconds for the fall detection notification to appear in the frontend
+web application. Having a response time of less than two seconds is extremely promising.
+This aids healthcare professionals to provide an emergency response within two seconds of
+the fall occurring. During future research, into deep learning model training, optimisation,
+deployment and investing in more capable edge device hardware, we hope to achieve a similar
+or even better results.
 
 
 
